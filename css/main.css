@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+.body,
+html {
+  overflow: hidden;
+  background: #212122;
+  font-family: "Syne", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(48px, 9vw, 96px);
+  color: white;
+}
+
+p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #212122;
+}
+
+main {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-container {
+  position: relative;
+  background: green;
+}
+
+.contact {
+  background: white;
+  width: 170px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -85px;
+  transition: 100ms all;
+}
+
+.contact-shadow {
+  width: 170px;
+  height: 32px;
+  position: absolute;
+  top: 6px;
+  left: -79px;
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+  -moz-box-shadow: inset 0px 0px 0px 2px white;
+  box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.contact-container:focus .contact {
+  transform: translate(6px, 6px);
+}
+
+img {
+  mix-blend-mode: luminosity;
+  width: clamp(164px, 30vw, 216px);
+  height: clamp(164px, 30vw, 216px);
+}
+
+.icon-container {
+  background-color: #212122;
+}
